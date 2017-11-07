@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Graph Visualisation Client </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="http://d3js.org/d3.v4.min.js"></script> 
+        <script src="sparqlClient.js"></script>
+    </head>
+    <body>
+    <div class="container">
+        <span id="node_info">
+            Name:<label id='node_name'></label>
+            Typ:<label id='node_type'></label>
+        </span>
+        <div class="form-group">Show Sensors<input class="form-control" name="checkbox" id="show_sensor" type="checkbox" checked="checked" >
+           Show Machines<input class="form-control" name="checkbox" id="show_machine" type="checkbox" checked="checked" >
+        Show Products<input class="form-control" name="checkbox" id="show_product" type="checkbox" checked="checked">
+        Show SensorData<input class="form-control" name="checkbox" id="show_sensordata" type="checkbox" checked="checked">
+    </div>
+    <div class="form-group">Show Node labels<input class="form-control" name="checkbox" id="show_nodes" type="checkbox" checked="checked" >
+        Show link labels<input class="form-control" name="checkbox" id="show_links" type="checkbox" checked="checked" >
+ </div>
+    <canvas id="network" width=500 height="500"></canvas>
+</div>
+    <script src="graphClient.js"></script>
+    </body>
+</html>
